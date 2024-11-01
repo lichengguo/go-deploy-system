@@ -58,7 +58,7 @@ const (
 	ERROR_DEPLOYMENT_RSYNC_FAIL          = int64(7008)
 	ERROR_DEPLOYMENT_CONNECT_SERVER_FAIL = int64(7009)
 	ERROR_DEPLOYMENT_STATUS_FAIL         = int64(7010)
-	ERROR_DEPLOYMENT_FILE_NOT_FOUND		 = int64(7011)
+	ERROR_DEPLOYMENT_FILE_NOT_FOUND      = int64(7011)
 	ERROR_DEPLOYMENT_FILE_NOT_GEN        = int64(7012)
 
 	// code = 9000 Git相关错误
@@ -125,7 +125,7 @@ var codeMsg = map[int64]string{
 	ERROR_DEPLOYMENT_RSYNC_FAIL:          "同步代码到服务器失败",
 	ERROR_DEPLOYMENT_CONNECT_SERVER_FAIL: "连接发布服务器失败",
 	ERROR_DEPLOYMENT_STATUS_FAIL:         "发布状态为失败, 不能回滚",
-	ERROR_DEPLOYMENT_FILE_NOT_FOUND:	  "发布文件未找到, 请检查文件名称和路径是否有误",
+	ERROR_DEPLOYMENT_FILE_NOT_FOUND:      "发布文件未找到, 请检查文件名称和路径是否有误",
 	ERROR_DEPLOYMENT_FILE_NOT_GEN:        "发布文件不能以 / 开头",
 
 	// Git相关错误提示

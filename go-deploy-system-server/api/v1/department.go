@@ -1,12 +1,13 @@
 package v1
 
 import (
-	"github.com/gin-gonic/gin"
 	"go-deploy-system-server/model"
 	"go-deploy-system-server/utils/errmsg"
 	"go-deploy-system-server/utils/validator"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
 )
 
 // 部门管理接口

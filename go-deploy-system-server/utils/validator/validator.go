@@ -4,12 +4,13 @@ package validator
 
 import (
 	"fmt"
+	"go-deploy-system-server/utils/errmsg"
+	"reflect"
+
 	"github.com/go-playground/locales/zh_Hans_CN"
 	unTrans "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	zhTrans "github.com/go-playground/validator/v10/translations/zh"
-	"go-deploy-system-server/utils/errmsg"
-	"reflect"
 )
 
 func Validate(data interface{}) (string, int64) {

@@ -3,9 +3,10 @@ package utils
 import (
 	"flag"
 	"fmt"
-	"gopkg.in/ini.v1"
 	"os"
 	"path/filepath"
+
+	"gopkg.in/ini.v1"
 )
 
 // 加载ini配置文件

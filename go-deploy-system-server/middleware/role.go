@@ -1,10 +1,11 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
 	"go-deploy-system-server/model"
 	"go-deploy-system-server/utils/errmsg"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 // 用户权限钩子

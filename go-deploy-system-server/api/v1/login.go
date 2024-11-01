@@ -1,12 +1,13 @@
 package v1
 
 import (
-	"github.com/gin-gonic/gin"
 	"go-deploy-system-server/middleware"
 	"go-deploy-system-server/model"
 	"go-deploy-system-server/utils/errmsg"
 	"go-deploy-system-server/utils/validator"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 // 登录接口

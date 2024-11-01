@@ -1,10 +1,11 @@
 package routes
 
 import (
-	"github.com/gin-gonic/gin"
 	v1 "go-deploy-system-server/api/v1"
 	"go-deploy-system-server/middleware"
 	"go-deploy-system-server/utils"
+
+	"github.com/gin-gonic/gin"
 )
 
 // InitRouter 初始化路由
