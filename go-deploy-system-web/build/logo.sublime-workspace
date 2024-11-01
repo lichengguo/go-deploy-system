@@ -1,0 +1,288 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.cn/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lichengguo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/lichengguo/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/lichengguo/Documents/00-一花资料/一花资料账号密码/账号密码.txt",
+		"/Users/lichengguo/Desktop/技术栈.txt",
+		"/Users/lichengguo/Desktop/id_rsa",
+		"/Users/lichengguo/Desktop/发布系统.txt",
+		"/Users/lichengguo/Desktop/test/a.txt",
+		"/Users/lichengguo/Desktop/test/c.txt",
+		"/Users/lichengguo/Documents/04-发布系统/发布系统问题总结.txt",
+		"/Users/lichengguo/Documents/04-发布系统/发布系统问题总结",
+		"/Users/lichengguo/Documents/03-日服德州测试服务器/192_168_3_116_data_structure_20200526.sql",
+		"/Users/lichengguo/Desktop/nginx_logrotate.sh",
+		"/Users/lichengguo/Documents/05-一花运维资料/YiihuaSA-master/shell/日服麻将测试服务器/info.txt",
+		"/Users/lichengguo/Desktop/test-mahjongjp-account.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/test-mahjongjp-api.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/test-mahjongjp-oa.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/nginx.conf",
+		"/Users/lichengguo/Desktop/腾讯云服务器alnk账号秘钥/id_rsa.pub",
+		"/Users/lichengguo/Desktop/gitee秘钥/id_rsa.pub",
+		"/Users/lichengguo/Desktop/选型.txt",
+		"/Users/lichengguo/Desktop/发布系统",
+		"/Users/lichengguo/Desktop/日服麻将服务器硬件需求",
+		"/Users/Shared/Relocated Items/Configuration/private/etc/bashrc.system_default",
+		"/Users/lichengguo/Desktop/python3/python3/day78 vue 6/素材图片/1.svg",
+		"/Users/lichengguo/Desktop/python3/python3/day73 vue 1/作业/表格管理作业说明.txt",
+		"/Users/lichengguo/Desktop/redis-teenpatti.txt",
+		"/Users/lichengguo/Desktop/dump.rdb",
+		"/Users/lichengguo/Desktop/nodejs/src/index.js",
+		"/Users/lichengguo/Desktop/vue.min.js",
+		"/Users/lichengguo/Desktop/01booktest/conf/app.conf",
+		"/Users/lichengguo/Desktop/技术栈",
+		"/Users/lichengguo/Desktop/s4day93课上所有/autoserver/manage.py",
+		"/Users/lichengguo/Desktop/s4day93课上所有/s4day93.py",
+		"/Users/lichengguo/Downloads/kibana-7.8.0-darwin-x86_64/config/kibana.yml",
+		"/Users/lichengguo/go/src/code.oldboyedu.com/gostudy/day11/99homework/logagent/my.log",
+		"/Users/lichengguo/go/src/code.oldboyedu.com/gostudy/day11/12tail_demo/my.log",
+		"/Users/lichengguo/Documents/00-Alnk/一花资料账号密码/账号密码.txt",
+		"/Users/lichengguo/Documents/05-一花运维资料/YiihuaSA-master/服务器相关文档/备份策略",
+		"/Users/lichengguo/Documents/02-麻将项目/国服一花麻将/国服一花麻将.txt",
+		"/Users/lichengguo/Documents/00-Alnk/一花资料/nginx配置文件解释.txt",
+		"/Users/lichengguo/Documents/00-Alnk/一花资料/账号密码.txt",
+		"/Users/lichengguo/Desktop/untitled.html",
+		"/Users/lichengguo/Documents/00-Alnk/一花资料/untitled.html",
+		"/Users/lichengguo/Desktop/pprof001.html",
+		"/private/var/folders/hs/f3ytxhxd4cd658jhfjl8z67w0000gn/T/pprof002.svg",
+		"/Users/lichengguo/Desktop/untitled.xml",
+		"/private/var/folders/hs/f3ytxhxd4cd658jhfjl8z67w0000gn/T/pprof001.svg",
+		"/Users/lichengguo/Documents/05-一花运维资料/YiihuaSA-master/shell/mon_base.sh",
+		"/Users/lichengguo/Documents/05-一花运维资料/YiihuaSA-master/shell/mon_base7.sh",
+		"/Users/lichengguo/Documents/02-麻将项目/日服一花麻将正式服务器/日服一花麻将正式服务器",
+		"/Users/lichengguo/Desktop/mongod.yaml",
+		"/Users/lichengguo/Desktop/redis.conf",
+		"/Users/lichengguo/Desktop/mem.sh",
+		"/Users/lichengguo/Desktop/local-mahjong-oa.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/local-mahjong-api.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/local-mahjong-account.yiihuagame.com",
+		"/Users/lichengguo/Desktop/一花麻将",
+		"/Users/lichengguo/Documents/Alnk/麻将项目/麻将项目",
+		"/Users/lichengguo/Desktop/一花麻将-日服",
+		"/Users/lichengguo/Desktop/发布系统/发布系统",
+		"/Users/lichengguo/Documents/Alnk/一花资料/账号密码.txt",
+		"/Users/lichengguo/Downloads/soft/day01/02var/main.go",
+		"/Applications/GoLand.app/Contents/bin/goland.vmoptions",
+		"/Users/lichengguo/Downloads/soft/goland/激活码.txt",
+		"/Users/lichengguo/Documents/YiihuaSA-master/yhchecker/config.json",
+		"/Users/lichengguo/Downloads/blog.mn886.net/index.html",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/users/views.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/users/__init__.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/5-main-蓝图的使用操作.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/config.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/4-main-session存储配置.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/3-main-数据迁移.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/2-main-数据库操作.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/1-main-csrf_token.py",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/main.py",
+		"/Users/lichengguo/Desktop/yihua2.sunvy.jp.conf",
+		"/Users/lichengguo/Desktop/apps-ft-facebook.yiihuagame.com.conf",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/templates/index.html",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/templates/base.html",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/templates/common.html",
+		"/Users/lichengguo/Desktop/day03/代码/flask_demo/templates/form.html",
+		"/Users/lichengguo/Documents/Alnk/麻将项目",
+		"/Users/lichengguo/Desktop/flask-2/代码/flask_demo/main.py",
+		"/Users/lichengguo/Desktop/falsk-1/代码/flask_demo/config.py",
+		"/Users/lichengguo/Desktop/falsk-1/代码/flask_demo/main.py",
+		"/Users/lichengguo/Desktop/my.cnf",
+		"/Users/lichengguo/Desktop/v2ray-linux-64/vpoint_vmess_freedom.json",
+		"/Users/lichengguo/Desktop/v2ray-linux-64/config.json",
+		"/Users/lichengguo/Documents/Alnk/SSL证书/yiihuagame.com证书/3966808__yiihuagame.com_nginx/yiihuagame.com.key",
+		"/Users/lichengguo/Documents/Alnk/亚马逊CDN.txt",
+		"/Users/lichengguo/Desktop/local-mahjong.yiihua.com.conf",
+		"/Users/lichengguo/Desktop/local-mahjong-oa.yiihua.com.conf",
+		"/Users/lichengguo/Desktop/local-mahjong-api.yiihua.com.conf",
+		"/Users/lichengguo/Documents/accountjp.yiihuagame.com.conf",
+		"/Users/lichengguo/Documents/Alnk/一花资料/Prometheus+grafana安装部署",
+		"/Users/lichengguo/Documents/Alnk/一花资料/北京代理端口",
+		"/Users/lichengguo/Documents/YiihuaSA-master/服务器相关文档/备份策略",
+		"/Users/lichengguo/Documents/Alnk/一花资料/问题",
+		"/Users/lichengguo/Documents/Alnk/一花资料/日本合作项目",
+		"/Users/lichengguo/Documents/Alnk/一花资料/centos7.6安装mysql5.6.45.txt",
+		"/Users/lichengguo/Documents/Alnk/一花资料/资料整理",
+		"/Users/lichengguo/Documents/Alnk/1.sh",
+		"/Users/lichengguo/Downloads/frp_0.33.0_windows_amd64/frpc_full.ini",
+		"/Users/lichengguo/Documents/yiihua_ops-master/README.md",
+		"/Users/lichengguo/Documents/YiihuaSA-master/shell/backup_data.sh",
+		"/Users/lichengguo/Downloads/yiihua_ops-master/ops/common/deploy_targz.py",
+		"/Users/lichengguo/Documents/Alnk/shell/mon_alarm.sh",
+		"/Applications/PyCharm.app/Contents/bin/pycharm.vmoptions",
+		"/Users/lichengguo/Documents/Alnk/一花资料/centos7.6编译安装nginx1.18.txt",
+		"/Users/lichengguo/Documents/Alnk/一花资料/centos7.6编译安装php7.1.txt",
+		"/Users/lichengguo/Documents/Alnk/一花资料/centos7.6安装mysql5.6.45",
+		"/Users/lichengguo/Documents/Alnk/一花资料/yum install gcc gcc-c++ automake pcre pcre-devel z",
+		"/Users/lichengguo/Documents/Alnk/一花资料/mysql5.6二进制安装包.txt",
+		"/Users/lichengguo/Documents/php7安装.txt",
+		"/Users/lichengguo/Documents/Alnk/一花资料/这是一个测试文件"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "logo.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

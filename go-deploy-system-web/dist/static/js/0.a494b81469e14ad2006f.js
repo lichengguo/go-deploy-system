@@ -1,0 +1,2 @@
+webpackJsonp([0],{"0NEh":function(l,n,t){"use strict";var u={urlpath:"http://10.4.7.200:3000/api/v1"},p=t("VU/8")(u,null,!1,null,null,null);n.a=p.exports}});
+//# sourceMappingURL=0.a494b81469e14ad2006f.js.map

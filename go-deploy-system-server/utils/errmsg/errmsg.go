@@ -1,0 +1,140 @@
+package errmsg
+
+// 错误码
+
+const (
+	SUCCESS = 200 // 成功
+	ERROR   = 500 // 失败
+
+	// code = 1000 部门管理模块错误码
+	ERROR_DEPARTMENT_NOT_EXIST    = int64(1001)
+	ERROR_DEPARTMENT_EXIST        = int64(1002)
+	ERROR_DEPARTMENT_CREATED_FAIL = int64(1003)
+	ERROR_DEPARTMENT_DEL_FAIL     = int64(1004)
+	ERROR_DEPARTMENT_MODIFY_FAIL  = int64(1005)
+	ERROR_DEPARTMENT_NOT_DEL      = int64(1006)
+
+	// code = 2000 用户管理模块错误码
+	ERROR_USER_NOT_EXIST     = int64(2001)
+	ERROR_USER_EXIST         = int64(2002)
+	ERROR_USER_CREATED_FAIL  = int64(2003)
+	ERROR_USER_PASSWORD_FAIL = int64(2004)
+	ERROR_USER_ROLE_FAIL     = int64(2005)
+	ERROR_USER_DISABLE       = int64(2006)
+	ERROR_USER_UPDATE_FAIL   = int64(2007)
+
+	// code = 3000 token
+	ERROR_TOKEN_FAIL       = int64(3001)
+	ERROR_TOKEN_NOT_EXIST  = int64(3002)
+	ERROR_TOKEN_TYPE_WRONG = int64(3003)
+
+	// code = 4000 机房管理模块错误码
+	ERROR_ENGINEROOM_NOT_EXIST    = int64(4001)
+	ERROR_ENGINEROOM_EXIST        = int64(4002)
+	ERROR_ENGINEROOM_CREATED_FAIL = int64(4003)
+	ERROR_ENGINEROOM_NOT_DEL      = int64(4004)
+	ERROR_ENGINEROOM_UPDATE_FAIL  = int64(4005)
+
+	// code = 5000 锁文件相关
+	ERROR_LOCKFILE_NOT_EXIST  = int64(5001)
+	ERROR_LOCKFILE_EXIST      = int64(5002)
+	ERROR_LOCKFILE_DEL_FAIL   = int64(5003)
+	ERROR_LOCKFILE_WRITE_FAIL = int64(5004)
+	ERROR_LOCKFILE_OTHER_INFO = int64(5005)
+
+	// code = 6000 服务器错误码
+	ERROR_SERVER_NOT_EXIST     = int64(6001)
+	ERROR_SERVER_EXIST         = int64(6002)
+	ERROR_SERVER_CREATED_FAIL  = int64(6003)
+	ERROR_SERVER_DIR_NOT_FOUND = int64(6004)
+	ERROR_SERVER_PWD_NULL      = int64(6005)
+
+	// code = 7000 发布项目配置错误码
+	ERROR_DEPLOYMENT_NOT_EXIST           = int64(7001)
+	ERROR_DEPLOYMENT_EXIST               = int64(7002)
+	ERROR_DEPLOYMENT_CREATED_FAIL        = int64(7003)
+	ERROR_DEPLOYMENT_UPDATE_FAIL         = int64(7004)
+	ERROR_DEPLOYMENT_NOT_ROLE            = int64(7007)
+	ERROR_DEPLOYMENT_RSYNC_FAIL          = int64(7008)
+	ERROR_DEPLOYMENT_CONNECT_SERVER_FAIL = int64(7009)
+	ERROR_DEPLOYMENT_STATUS_FAIL         = int64(7010)
+	ERROR_DEPLOYMENT_FILE_NOT_FOUND		 = int64(7011)
+	ERROR_DEPLOYMENT_FILE_NOT_GEN        = int64(7012)
+
+	// code = 9000 Git相关错误
+	ERROR_GIT_PULL_KEY_FAIL = int64(9001)
+	ERROR_GIT_PULL_PWD_FAIL = int64(9002)
+	ERROR_GIT_CONFIG_FAIL   = int64(9003)
+	ERROR_GIT_ROLLBACK_FAIL = int64(9004)
+)
+
+var codeMsg = map[int64]string{
+	// 状态
+	SUCCESS: "成功",
+	ERROR:   "失败",
+
+	// 部门管理模块
+	ERROR_DEPARTMENT_NOT_EXIST:    "部门不存在",
+	ERROR_DEPARTMENT_EXIST:        "部门已经存在",
+	ERROR_DEPARTMENT_CREATED_FAIL: "部门创建失败",
+	ERROR_DEPARTMENT_DEL_FAIL:     "删除部门失败",
+	ERROR_DEPARTMENT_MODIFY_FAIL:  "修改部门失败",
+	ERROR_DEPARTMENT_NOT_DEL:      "该部门下存在用户,无法删除",
+
+	// 用户管理模块
+	ERROR_USER_NOT_EXIST:     "用户不存在",
+	ERROR_USER_EXIST:         "用户已经存在",
+	ERROR_USER_CREATED_FAIL:  "用户创建失败",
+	ERROR_USER_PASSWORD_FAIL: "用户密码错误",
+	ERROR_USER_ROLE_FAIL:     "用户权限不够",
+	ERROR_USER_DISABLE:       "该用户已被禁用",
+	ERROR_USER_UPDATE_FAIL:   "更新用户信息失败",
+
+	// token
+	ERROR_TOKEN_FAIL:       "TOKEN验证失败",
+	ERROR_TOKEN_NOT_EXIST:  "TOKEN不存在",
+	ERROR_TOKEN_TYPE_WRONG: "TOKEN格式错误",
+
+	// 机房管理模块
+	ERROR_ENGINEROOM_NOT_EXIST:    "机房不存在",
+	ERROR_ENGINEROOM_EXIST:        "机房已经创建",
+	ERROR_ENGINEROOM_CREATED_FAIL: "机房创建失败",
+	ERROR_ENGINEROOM_NOT_DEL:      "该机房下存在服务器,无法删除",
+	ERROR_ENGINEROOM_UPDATE_FAIL:  "更新机房信息失败",
+
+	// 锁文件
+	ERROR_LOCKFILE_NOT_EXIST:  "锁文件不存在",
+	ERROR_LOCKFILE_EXIST:      "锁文件已经存在",
+	ERROR_LOCKFILE_DEL_FAIL:   "删除锁文件失败",
+	ERROR_LOCKFILE_WRITE_FAIL: "创建锁文件失败",
+	ERROR_LOCKFILE_OTHER_INFO: "有其他的小伙伴正在发布该项目哟，请稍后",
+
+	// 服务器模块
+	ERROR_SERVER_NOT_EXIST:     "服务器不存在",
+	ERROR_SERVER_EXIST:         "服务器已经创建",
+	ERROR_SERVER_CREATED_FAIL:  "服务器创建失败",
+	ERROR_SERVER_DIR_NOT_FOUND: "目标服务器代码发布目录未找到",
+	ERROR_SERVER_PWD_NULL:      "服务器密码和秘钥同时不存在",
+
+	// 发布项目配置模块
+	ERROR_DEPLOYMENT_NOT_EXIST:           "发布项目不存在",
+	ERROR_DEPLOYMENT_EXIST:               "发布项目已经创建",
+	ERROR_DEPLOYMENT_CREATED_FAIL:        "发布项目创建失败",
+	ERROR_DEPLOYMENT_UPDATE_FAIL:         "发布项目更新失败",
+	ERROR_DEPLOYMENT_NOT_ROLE:            "没有该项目的权限",
+	ERROR_DEPLOYMENT_RSYNC_FAIL:          "同步代码到服务器失败",
+	ERROR_DEPLOYMENT_CONNECT_SERVER_FAIL: "连接发布服务器失败",
+	ERROR_DEPLOYMENT_STATUS_FAIL:         "发布状态为失败, 不能回滚",
+	ERROR_DEPLOYMENT_FILE_NOT_FOUND:	  "发布文件未找到, 请检查文件名称和路径是否有误",
+	ERROR_DEPLOYMENT_FILE_NOT_GEN:        "发布文件不能以 / 开头",
+
+	// Git相关错误提示
+	ERROR_GIT_PULL_KEY_FAIL: "拉取Git代码失败,秘钥错误",
+	ERROR_GIT_PULL_PWD_FAIL: "拉取Git代码失败,密码错误",
+	ERROR_GIT_CONFIG_FAIL:   "Git链接或者密码或者秘钥配置错误",
+	ERROR_GIT_ROLLBACK_FAIL: "Git代码回滚失败",
+}
+
+func GetErrMsg(code int64) string {
+	return codeMsg[code]
+}
