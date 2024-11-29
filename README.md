@@ -221,7 +221,7 @@
 > 访问 nginx中配置的IP或者域名
 > 第一次启动发布系统以后，系统会自动生成一个账号 `admin` 密码 `123456` 的管理用户
 >
-> ![image-20210113175853799](images/1.png)  
+> ![image-20210113175853799](./images/1.png)  
 >
 > 修改密码
 >
@@ -391,13 +391,3 @@
 > ![image-20201222173405218](./images/image-20201222173405218.png)    
 
 
-
-
-
-
-
-
-
-
-
-## [容器化发布](https://gitee.com/lichengguo/go-deploy-system-server/blob/master/deployment_docker.md)
