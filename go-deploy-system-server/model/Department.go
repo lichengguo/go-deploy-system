@@ -107,6 +107,18 @@ func FindDepartmentList(pageSize, page int, departmentName string) (int64, []Dep
 	}
 
 	db.Model(&dep).Count(&total) // 查询部门总数
+
+
+	// 查询全部部门
+	if pageSize == 0 || page == 0 {
+		err := db.Find(&depList).Error
+		if err != nil {
+			return 0, nil, errmsg.ERROR
+		}
+		return total, depList, errmsg.SUCCESS
+	}
+
+	// 分页查询部门
 	err := db.Limit(pageSize).Offset((page - 1) * pageSize).Find(&depList).Error
 	if err != nil {
 		return 0, nil, errmsg.ERROR

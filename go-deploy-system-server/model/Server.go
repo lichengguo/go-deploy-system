@@ -128,7 +128,16 @@ func FindServerList(pageSize, page int, serverName string) (int64, []Server, int
 		return total, serverList, errmsg.SUCCESS
 	}
 
-	// 多表查询 预加载
+	// 查询全部
+	if pageSize == 0 || page == 0 {
+		err := db.Preload("Engineroom").Find(&serverList).Error
+		if err != nil {
+			return 0, nil, errmsg.ERROR
+		}
+		return total, serverList, errmsg.SUCCESS
+	}
+
+	// 多表查询 预加载 分页查询
 	db.Preload("Engineroom").Find(&serverList).Count(&total)
 	err := db.Preload("Engineroom").Limit(pageSize).Offset((page - 1) * pageSize).Find(&serverList).Error
 	if err != nil && err != gorm.ErrRecordNotFound {

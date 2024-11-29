@@ -110,6 +110,16 @@ func FindEngineroomList(pageSize, page int, engineroomName string) (int64, []Eng
 		return total, engList, errmsg.SUCCESS
 	}
 
+	// 查询全部
+	if pageSize == 0 || page == 0 {
+		err := db.Find(&engList).Error
+		if err != nil {
+			return 0, nil, errmsg.ERROR
+		}
+		return total, engList, errmsg.SUCCESS
+	}
+
+	// 分页查询机房
 	db.Find(&engList).Count(&total) // 查询机房总数
 	err := db.Limit(pageSize).Offset((page - 1) * pageSize).Find(&engList).Error
 	if err != nil {

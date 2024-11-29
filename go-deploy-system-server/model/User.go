@@ -131,7 +131,16 @@ func FindUserList(pageSize, page int, userName string) (int64, []User, int64) {
 		return total, userList, errmsg.SUCCESS
 	}
 
-	// 多表查询 预加载
+	// 查询全部
+	if pageSize == 0 || page == 0 {
+		err := db.Preload("Department").Find(&userList).Error
+		if err != nil {
+			return 0, nil, errmsg.ERROR
+		}
+		return total, userList, errmsg.SUCCESS
+	}
+
+	// 多表查询 预加载 分页查询
 	db.Preload("Department").Find(&userList).Count(&total)
 	err := db.Preload("Department").Limit(pageSize).Offset((page - 1) * pageSize).Find(&userList).Error
 	if err != nil && err != gorm.ErrRecordNotFound {
