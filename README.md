@@ -161,6 +161,10 @@
 > ## 3. 编译前端代码
 > ## 3.1 安装nodejs（包含了npm包管理器）直接下一步安装即可
 > ## 下载地址：https://nodejs.org/zh-cn/download/prebuilt-installer
+> ## 安装完成以后，记得npm使用国内镜像，不然会很卡
+> ## npm config set registry https://registry.npm.taobao.org（该域名被弃用）
+> ## npm config set registry https://registry.npmmirror.com
+> ## npm config get registry 
 > 
 > ## 3.2 全局安装vue脚手架工具
 > # npm i -g @vue/cli-init
@@ -169,7 +173,7 @@
 > ## 3.3 安装webpack
 > # npm install --save-dev webpack
 > 
-> ## 3.4 创建一个vue项目
+> ## 3.4 创建一个vue项目(直接拉取前端代码就不需要此步骤)
 > 如果报错，可能是代理引起的，关闭代理
 > #vue init webpack go-deploy-system-web-test
 > ? Project name go-deploy-system-web-demo
@@ -189,6 +193,9 @@
 > 
 > ## 3.6 编译，编译后会生成dist目录
 > # npm run build
+> 
+> ## 3.7 以开发模式运行代码
+> ## npm run dev
 > ```
 >
 > ```shell
